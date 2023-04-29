@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "642495ee-c86b-475b-9a79-cac76d5abbef",
+		"name": "Lab_15",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Board",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=AT_lab15&key=c115405e4729d10f401b23ee8e56081b&token=ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "AT_lab15"
+						},
+						{
+							"key": "key",
+							"value": "c115405e4729d10f401b23ee8e56081b"
+						},
+						{
+							"key": "token",
+							"value": "ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create LIST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/lists?name=Mylist&idBoard=644cdca0567ed79f0f1aa213&key=c115405e4729d10f401b23ee8e56081b&token=ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Mylist"
+						},
+						{
+							"key": "idBoard",
+							"value": "644cdca0567ed79f0f1aa213"
+						},
+						{
+							"key": "key",
+							"value": "c115405e4729d10f401b23ee8e56081b"
+						},
+						{
+							"key": "token",
+							"value": "ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Card",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?key=c115405e4729d10f401b23ee8e56081b&token=ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D&name=NewCard&idList=644cdcf48dd7def56a16b99b",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "c115405e4729d10f401b23ee8e56081b"
+						},
+						{
+							"key": "token",
+							"value": "ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D"
+						},
+						{
+							"key": "name",
+							"value": "NewCard"
+						},
+						{
+							"key": "idList",
+							"value": "644cdcf48dd7def56a16b99b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add NewCheckList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists?key=c115405e4729d10f401b23ee8e56081b&token=ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D&name=NewCheckList&idCard=644cdd475c9cc8de9bece39c",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "c115405e4729d10f401b23ee8e56081b"
+						},
+						{
+							"key": "token",
+							"value": "ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D"
+						},
+						{
+							"key": "name",
+							"value": "NewCheckList"
+						},
+						{
+							"key": "idCard",
+							"value": "644cdd475c9cc8de9bece39c"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete CheckList",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/checklists/644cdd8a463e3bfe61fae231?key=c115405e4729d10f401b23ee8e56081b&token=ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"checklists",
+						"644cdd8a463e3bfe61fae231"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "c115405e4729d10f401b23ee8e56081b"
+						},
+						{
+							"key": "token",
+							"value": "ATTAacd2e79502447c11d8f1d0fa8c8a3ba633755d0365890ba30347d720c9d4178990E2856D"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
